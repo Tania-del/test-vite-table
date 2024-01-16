@@ -1,10 +1,33 @@
-import React from 'react'
+import { useParams } from 'react-router-dom';
+import { IProfile } from '../types/placeholder-data'
+import BootstrapTable from 'react-bootstrap/Table';
 
-const ProfilesTable = () => {
+interface IProfilesTable {
+    data: IProfile[];
+}
+
+const ProfilesTable = ({ data }: IProfilesTable) => {
+    const { accountId } = useParams();
+    const profile = data.find((profile) => profile.profileId === Number(accountId))
+    const { profileId, country, marketplace } = (profile ?? {}) as IProfile;
+
   return (
-    <div>
-      profiles
-    </div>
+      <BootstrapTable striped bordered hover>
+          <thead>
+              <tr>
+                  <th>Profile ID</th>
+                  <th>Country</th>
+                  <th>Marketplace</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>{profileId}</td>
+                  <td>{country}</td>
+                  <td>{marketplace}</td>
+              </tr>
+          </tbody>
+  </BootstrapTable>
   )
 }
 

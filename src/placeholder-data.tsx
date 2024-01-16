@@ -1,12 +1,12 @@
 export const data = {
   accounts: [
-    { accountId: 1, email: 'account1@gmail.com', creationDate: '2022-01-01' },
-    { accountId: 2, email: 'account2@gmail.com', creationDate: '2022-01-02' },
-    { accountId: 3, email: 'account3@gmail.com', creationDate: '2022-01-03' },
-    { accountId: 4, email: 'account4@gmail.com', creationDate: '2022-01-04' },
-    { accountId: 5, email: 'account5@gmail.com', creationDate: '2022-01-05' },
-    { accountId: 6, email: 'account6@gmail.com', creationDate: '2022-01-06' },
-    { accountId: 7, email: 'account7@gmail.com', creationDate: '2022-01-07' },
+    { accountId: 1, email: 'account1@gmail.com', authToken: 'a1b2c3d4e5f6', creationDate: '2022-01-01' },
+    { accountId: 2, email: 'account2@gmail.com',authToken: 'b1b2c3d4dd5f6', creationDate: '2022-01-02' },
+    { accountId: 3, email: 'account3@gmail.com', authToken: 'c1b2c3sds4e5f6', creationDate:  '2022-01-03' },
+    { accountId: 4, email: 'account4@gmail.com', authToken: 'a1b2c3d4e5aa6', creationDate: '2022-01-04' },
+    { accountId: 5, email: 'account5@gmail.com', authToken: 'b1b2233d4e5f6', creationDate: '2022-01-05' },
+    { accountId: 6, email: 'account6@gmail.com', authToken: 'c1bss3d4e5f6', creationDate: '2022-01-06' },
+    { accountId: 7, email: 'account7@gmail.com', authToken: 'd1ddb2d4e5f6', creationDate: '2022-01-07' },
    
   ],
   profiles: [
