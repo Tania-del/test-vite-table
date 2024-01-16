@@ -11,7 +11,7 @@ function App() {
   const { accounts, profiles, campaigns }: IData = data;  
 
   return (
-      <Router basename='/test-vite-tables/'>
+      <Router>
         <Routes>
         <Route path='/' element={<AccountsTable data={accounts} />} />
         <Route path='/profiles/:accountId' element={<ProfilesTable data={profiles} />} />
