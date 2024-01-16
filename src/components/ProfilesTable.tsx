@@ -23,7 +23,7 @@ const ProfilesTable = ({ data }: IProfilesTable) => {
           <tbody>
               <tr>
                   <td>
-                      <Link to={`/campaigns/${profileId}`} >{profileId}</Link>
+                      <Link className="custom-a" to={`/campaigns/${profileId}`} >{profileId}</Link>
                   </td>
                   <td>{country}</td>
                   <td>{marketplace}</td>

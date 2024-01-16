@@ -10,13 +10,13 @@ export const data = {
    
   ],
   profiles: [
-    { profileId: 1, country: 'Country1', marketplace: 'Marketplace1' },
-    { profileId: 2, country: 'Country2', marketplace: 'Marketplace2' },
-    { profileId: 3, country: 'Country2', marketplace: 'Marketplace2' },
-    { profileId: 4, country: 'Country2', marketplace: 'Marketplace2' },
-    { profileId: 5, country: 'Country2', marketplace: 'Marketplace2' },
-    { profileId: 6, country: 'Country2', marketplace: 'Marketplace2' },
-    { profileId: 7, country: 'Country2', marketplace: 'Marketplace2' },
+    { profileId: 1, country: 'America', marketplace: 'Marketplace1' },
+    { profileId: 2, country: 'Spain', marketplace: 'Marketplace3' },
+    { profileId: 3, country: 'Country2', marketplace: 'Marketplace4' },
+    { profileId: 4, country: 'Italy', marketplace: 'Marketplace7' },
+    { profileId: 5, country: 'New Zeland', marketplace: 'Marketplace8' },
+    { profileId: 6, country: 'Ukraine', marketplace: 'Marketplace10' },
+    { profileId: 7, country: 'Country4', marketplace: 'Marketplace2' },
    
   ],
   campaigns: [
