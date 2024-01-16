@@ -1,18 +1,24 @@
 import BootstrapTable from 'react-bootstrap/Table';
 import { IAccount } from '../types/placeholder-data';
 import { Link } from 'react-router-dom';
+import '../App.css'
 
 interface IAccountsTable {
     data: IAccount[];
 }
     
 const AccountsTable = ({ data }: IAccountsTable) => {
+  
     
-  return (
+    return (
+        
       <BootstrapTable striped bordered hover>
           <thead>
-              <tr>
-                  <th>Account ID</th>
+                    <tr>
+                        <th className='custom-th'>Account ID
+            <input></input>
+                  </th>
+                     
                   <th>Email</th>
                   <th>Auth Token</th>
                   <th>Creation Date</th>
@@ -23,7 +29,7 @@ const AccountsTable = ({ data }: IAccountsTable) => {
                   {data.map(({ accountId, email, authToken, creationDate }) => (
                       <tr key={accountId}>
                           <td>
-                              <Link to={`/profiles/${accountId}`}>{accountId}</Link>
+                              <Link  className='custom-a' to={`/profiles/${accountId}`}>{accountId}</Link>
                           </td>
                           <td>{email}</td>
                           <td>{authToken}</td>
@@ -33,6 +39,7 @@ const AccountsTable = ({ data }: IAccountsTable) => {
          
           </tbody>
    </BootstrapTable>
+      
   )
 }
 

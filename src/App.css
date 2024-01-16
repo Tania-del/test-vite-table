@@ -5,3 +5,16 @@
   text-align: center;
 }
 
+.custom-a {
+  color: 	#708090;
+  text-decoration: none;
+  
+}
+.custom-a:hover {
+  color: black;
+}
+
+.custom-th {
+  display: flex;
+  flex-direction: column;
+}
