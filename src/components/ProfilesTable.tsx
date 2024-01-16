@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { IProfile } from '../types/placeholder-data'
 import BootstrapTable from 'react-bootstrap/Table';
 
@@ -22,7 +22,9 @@ const ProfilesTable = ({ data }: IProfilesTable) => {
           </thead>
           <tbody>
               <tr>
-                  <td>{profileId}</td>
+                  <td>
+                      <Link to={`/campaigns/${profileId}`} >{profileId}</Link>
+                  </td>
                   <td>{country}</td>
                   <td>{marketplace}</td>
               </tr>

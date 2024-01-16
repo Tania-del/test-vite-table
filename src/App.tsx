@@ -15,7 +15,7 @@ function App() {
         <Routes>
         <Route path='/' element={<AccountsTable data={accounts} />} />
         <Route path='/profiles/:accountId' element={<ProfilesTable data={profiles} />} />
-          <Route path='/campaigns/:profileId' element={<CampaignsTable />} />
+          <Route path='/campaigns/:profileId' element={<CampaignsTable data={campaigns} />} />
       </Routes>
       </BrowserRouter>
   )
