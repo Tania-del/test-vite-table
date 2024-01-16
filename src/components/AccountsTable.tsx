@@ -31,7 +31,6 @@ const AccountsTable = ({ data }: IAccountsTable) => {
         authToken.toLowerCase().includes(value.toLowerCase()) ||
         creationDate.toLowerCase().includes(value.toLowerCase())
     );
-
     setFilteredData(newData);
      
   // eslint-disable-next-line react-hooks/exhaustive-deps
