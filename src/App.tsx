@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom'
 import './App.css'
 import AccountsTable from './components/AccountsTable'
 import CampaignsTable from './components/CampaignsTable'
@@ -11,13 +11,13 @@ function App() {
   const { accounts, profiles, campaigns }: IData = data;  
 
   return (
-     <BrowserRouter>
+      <Router basename='/test-vite-table'>
         <Routes>
         <Route path='/' element={<AccountsTable data={accounts} />} />
         <Route path='/profiles/:accountId' element={<ProfilesTable data={profiles} />} />
           <Route path='/campaigns/:profileId' element={<CampaignsTable data={campaigns} />} />
       </Routes>
-      </BrowserRouter>
+      </Router>
   )
 }
 
